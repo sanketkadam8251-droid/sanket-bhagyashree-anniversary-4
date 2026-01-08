@@ -17,6 +17,29 @@
     font-family:'Segoe UI',sans-serif;
     overflow:hidden;
     text-align:center;
+}
+
+    .photo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.photo-container img {
+  width: 260px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(255, 0, 100, 0.6);
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.05); }
+  40%  { transform: scale(1); }
+  60%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
   }
 
   h1{
@@ -76,6 +99,10 @@
 
 <h1>💖 Happy 4th Anniversary 💖</h1>
 <div class="names">Sanket ❤️ Bhagyashree</div>
+  <div class="photo-container">
+  <img src="together.jpg" alt="Sanket & Bhagyashree">
+</div>
+
 
 <div class="scene">🛵👦💐👧</div>
 <p style="color:white;">Forever & Always 💕</p>
