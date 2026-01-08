@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sanket ❤️ Bhagyashree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    font-family:'Segoe UI',sans-serif;
+    overflow:hidden;
+    text-align:center;
+  }
+
+  h1{
+    color:#fff;
+    font-size:34px;
+    animation:glow 2s infinite alternate;
+    margin:8px 0;
+  }
+
+  .names{
+    font-size:22px;
+    color:#fff;
+    margin-bottom:10px;
+  }
+
+  @keyframes glow{
+    from{ text-shadow:0 0 10px #fff; }
+    to{ text-shadow:0 0 30px #ff004f; }
+  }
+
+  .scene{
+    font-size:90px;
+    animation:float 3s ease-in-out infinite;
+  }
+
+  @keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-12px); }
+  }
+
+  .btn{
+    margin-top:18px;
+    padding:12px 22px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    background:#fff;
+    color:#ff2f6d;
+    cursor:pointer;
+  }
+
+  .hearts span{
+    position:absolute;
+    bottom:-20px;
+    font-size:24px;
+    animation:rise 6s infinite;
+  }
+
+  @keyframes rise{
+    0%{ transform:translateY(0); opacity:1; }
+    100%{ transform:translateY(-120vh); opacity:0; }
+  }
+</style>
+</head>
+
+<body onclick="playMusic()">
+
+<h1>💖 Happy 4th Anniversary 💖</h1>
+<div class="names">Sanket ❤️ Bhagyashree</div>
+
+<div class="scene">🛵👦💐👧</div>
+<p style="color:white;">Forever & Always 💕</p>
+
+<button class="btn">🎶 Tap for Music</button>
+
+<!-- Background Music -->
+<audio id="music" loop>
+  <source src="vaara-re.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts">
+  <span style="left:10%;">❤️</span>
+  <span style="left:30%; animation-delay:1s;">💖</span>
+  <span style="left:50%; animation-delay:2s;">💕</span>
+  <span style="left:70%; animation-delay:3s;">💘</span>
+  <span style="left:90%; animation-delay:4s;">❤️</span>
+</div>
+
+<script>
+  function playMusic(){
+    document.getElementById("music").play();
+  }
+</script>
+
+</body>
+</html>
