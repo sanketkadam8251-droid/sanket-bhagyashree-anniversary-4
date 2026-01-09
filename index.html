@@ -2,124 +2,123 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sanket ❤️ Bhagyashree</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary ❤️</title>
+
 <style>
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg,#ff416c,#ff4b2b,#ff758c);
+  background-size:400% 400%;
+  animation:bgMove 10s infinite alternate;
+  font-family:'Segoe UI',sans-serif;
+  text-align:center;
+  overflow-x:hidden;
 }
 
-.title {
-  font-size: 32px;
-  color: #e91e63;
-  margin-bottom: 10px;
-  animation: fadeIn 2s ease-in-out;
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  100%{background-position:100% 50%;}
 }
 
-.names {
-  font-size: 22px;
-  color: #ad1457;
-  margin-bottom: 15px;
-  animation: fadeIn 3s ease-in-out;
+.title{
+  font-size:32px;
+  color:#fff;
+  animation:fadeDown 2s ease;
 }
 
-.photo-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.names{
+  font-size:24px;
+  color:#ffe6ea;
+  margin-bottom:15px;
+  animation:fadeUp 2.5s ease;
 }
 
-.photo-container img {
-  width: 260px;
-  border-radius: 25px;
-  box-shadow: 0 0 25px rgba(255, 0, 100, 0.6);
-  animation: heartbeat 2s infinite;
+@keyframes fadeDown{
+  from{opacity:0;transform:translateY(-30px);}
+  to{opacity:1;transform:translateY(0);}
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
 }
 
-@keyframes heartbeat {
-  0%   { transform: scale(1); }
-  25%  { transform: scale(1.05); }
-  40%  { transform: scale(1); }
-  60%  { transform: scale(1.08); }
-  100% { transform: scale(1); }
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:12px;
+  width:90%;
+  max-width:500px;
+  margin-top:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 0 20px rgba(255,255,255,0.6);
+  animation:heartbeat 2s infinite;
+}
+
+@keyframes heartbeat{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+}
+
+.love{
+  margin-top:20px;
+  font-size:18px;
+  color:white;
+}
+
+.hearts span{
+  position:fixed;
+  bottom:-20px;
+  font-size:24px;
+  animation:float 6s infinite;
+}
+
+.hearts span:nth-child(1){left:10%;}
+.hearts span:nth-child(2){left:30%;animation-delay:1s;}
+.hearts span:nth-child(3){left:50%;animation-delay:2s;}
+.hearts span:nth-child(4){left:70%;animation-delay:3s;}
+.hearts span:nth-child(5){left:85%;animation-delay:4s;}
+
+@keyframes float{
+  0%{transform:translateY(0);opacity:0;}
+  20%{opacity:1;}
+  100%{transform:translateY(-100vh);opacity:0;}
 }
 </style>
+</head>
 
+<body>
 
+<h1 class="title">💖 Happy 4th Anniversary 💖</h1>
+<h2 class="names">Sanket 💕 Bhagyashree</h2>
 
-
-<body onclick="playMusic()">
-
-  <h1 class="title">💖 Happy 4th Anniversary 💖</h1>
-  <div class="names">Sanket ❤️ Bhagyashree</div>
-
-  <div class="photo-container">
-    <img src="together.jpg" alt="Sanket & Bhagyashree">
-  </div>
-
-  <p style="color:white; margin-top:15px;">Forever & Always 💞</p>
-
-  <button class="btn">🎵 Tap for Music</button>
-
-  <!-- Background Music -->
-  <audio id="music" loop>
-    <source src="vaara-re.mp3" type="audio/mpeg">
-  </audio>
-
-</body>
-
-
-<body onclick="playMusic()">
-
-<h1>💖 Happy 4th Anniversary 💖</h1>
-<div class="names">Sanket ❤️ Bhagyashree</div>
-  <div class="photo-container">
-  <img src="together.jpg" alt="Sanket & Bhagyashree">
+<div class="gallery">
+  <img src="together.jpg">
+  <img src="p1.jpg">
+  <img src="p2.jpg">
 </div>
 
-
-<div class="scene">🛵👦💐👧</div>
-<p style="color:white;">Forever & Always 💕</p>
-
-<button class="btn">🎶 Tap for Music</button>
-
-<!-- Background Music -->
-<audio id="music" loop>
-  <source src="vaara-re.mp3" type="audio/mpeg">
-</audio>
+<p class="love">
+  💞 From smiles to forever 💞<br>
+  🌍 You are my today & all tomorrows 🌍<br>
+  🫶 Forever with you 🫶
+</p>
 
 <div class="hearts">
-  <span style="left:10%;">❤️</span>
-  <span style="left:30%; animation-delay:1s;">💖</span>
-  <span style="left:50%; animation-delay:2s;">💕</span>
-  <span style="left:70%; animation-delay:3s;">💘</span>
-  <span style="left:90%; animation-delay:4s;">❤️</span>
+  <span>💖</span><span>💘</span><span>💕</span>
+  <span>😍</span><span>💞</span>
 </div>
 
-<script>
-  function playMusic(){
-    document.getElementById("music").play();
-  }
-</script>
-
 </body>
-</html> 
+</html>
+
