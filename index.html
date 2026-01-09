@@ -4,8 +4,20 @@
 <meta charset="UTF-8">
 <title>Sanket ❤️ Bhagyashree</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
 
-<style>.title {
+.title {
   font-size: 32px;
   color: #e91e63;
   margin-bottom: 10px;
@@ -19,6 +31,19 @@
   animation: fadeIn 3s ease-in-out;
 }
 
+.photo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.photo-container img {
+  width: 260px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(255, 0, 100, 0.6);
+  animation: heartbeat 2s infinite;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -29,6 +54,18 @@
     transform: translateY(0);
   }
 }
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.05); }
+  40%  { transform: scale(1); }
+  60%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+</style>
+
+
+
 
   body{
     <h1 class="title">Happy 4th Anniversary 💖</h1>
